@@ -56,8 +56,6 @@ PID  USER   MEM %  COMMAND
 
 ## Email Notification
 If the disk usage exceeds the specified threshold, the script will send an email notification with the system status. The email will contain the full system monitoring report, including the disk usage warning.
-example of email notification
-![image](https://lens.usercontent.google.com/image?vsrid=CMG1l5IBEAIYASIkYTdlNmVhNjMtMTNjMS00ZTdjLWFiZDAtOGI5M2YxNWE5Zjlj&gsessionid=Ua76MjmzIZd0O67ESz8Sfjk0VtC_bTeXOzFBqZzsTCmC3PwsWTuuKQ)
 
 ## Automate the Script with Cron Job
 You can automate the script to run every hour and send an email if any thresholds are breached by setting it up as a cron job.
