@@ -40,7 +40,7 @@ get_memory_usage() {
 
 # Function to get disk usage
 get_disk_usage() {
-    df -h | grep '/dev/mapper/rl-root' | awk '{print $5}' | sed 's/%//'
+    df -h / | awk 'NR==2 {print $5}' | sed 's/%//'
 }
 
 # Get the current date and time
