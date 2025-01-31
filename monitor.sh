@@ -30,7 +30,8 @@ send_email() {
 
 # Function to get CPU usage
 get_cpu_usage() {
-    top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1"%"}'
+    top -bn1 | grep "Cpu(s)" | awk '{print $2 + $4 "%"}'
+
 }
 
 # Function to get memory usage (total, used, free)
