@@ -78,7 +78,7 @@ REPORT="System Monitoring Report - $CURRENT_DATE\n==============================
 # Output the report to the log file
 echo -e "$REPORT" >> "$OUTPUT_FILE"
 
-# Print the report in color (optional)
+# Print the report in color 
 echo -e "\033[1;32m$REPORT\033[0m" # Green color for normal output
 
 # Send an email with the full report if any disk usage warning exists
